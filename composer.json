@@ -1,0 +1,34 @@
+{
+  "name": "mak/api-driver",
+  "description": "Api driver package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Danil",
+      "email": "cherepanov@mak-logic.ru"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "illuminate/database": "^9.0",
+    "illuminate/support": "^9.0",
+    "illuminate/http": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mak\\Driver\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": false,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mak\\Driver\\Providers\\DriverServiceProvider"
+      ]
+    }
+  }
+}
